@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<% if flash[:notice] %>
+  <p><%= flash[:notice] %></p>
+<% end %>
+
+	<% @books.each do |book| %>
+    <p><strong>Title:</strong>
+    	<span><%= book.title %></span>
+    </p>
+    <p><strong>Body:</strong>
+    	<span><%= book.body %></span>
+    </p>
+ <% end %>
+
+</body>
+</html>
